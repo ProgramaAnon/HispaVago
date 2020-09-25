@@ -1,0 +1,59 @@
+.trasparencia2 {
+
+     /*background-color: rgba(26, 158, 158, 0.096); */
+     background-color: rgba(22, 31, 31, 0.158);
+    color: white;
+    resize: none;
+    border: 5 none;
+    outline: none;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+.colortext {
+  color: azure;
+}
+.btn-morado {
+  background-color: #181618;
+  color: azure;
+}
+.btn-play {
+  background-color: #423d42;
+  color: azure;
+}
+.btn-morado1 {
+  background-color: #8d099e;
+  color: azure;
+}
+.btn-rojoo {
+  background-color: #a01e1e;
+  color: azure;
+}
+.btn-pausa {
+  background-color: #343632;
+  color: azure;
+}
+.btn-seguir {
+  background-color: #5b5e57;
+  color: azure;
+}
+.btn-seguir {
+  background-color: #8f9289;
+  color: azure;
+}
+
+
+body {
+  background-color: #2f3136;
+  
+}
+h1, h3 {
+  color: #957DAD;
+}
+.ml-6 {
+  margin-left: 430px;
+}
+.ml-7 {
+  margin-left: 550px;
+}

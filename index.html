@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="3010536.svg" type="image/x-icon">
+    <title>Hispa Vago</title>
+</head>
+<style>
+    .text-uppercase {
+        text-transform: uppercase;
+    }
+    
+    .button-margin {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .row-margin {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div>
+            <div>
+                <h1 class="text-center">Hispa Vago</h1>
+                <h3 class="text-center text-uppercase"><strong>Estamos para cuando no quieres leer</strong></h3>
+            </div>
+        </div>
+    </div>
+    <p id="textAreplazar"></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="col-lg-12">
+                    <textarea class="form-control trasparencia2 colortext " id="text-content " name="text-content" rows="20 " placeholder="Anon aqui! coloca el texto del post "></textarea>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <button type="button " class="btn btn-dark button-margin" onclick="botonEnviar(); ">Traformar Texto !</button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="col-lg-12">
+                    <textarea class="form-control trasparencia2 colortext " id="textarea " name="text-content " rows="20 " placeholder="Texto Tranformado Aparecera aqui "></textarea>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <button type="button" class="btn btn-primary neko button-margin" onclick="copy_to_clipboard( 'textarea'); ">Copiar Text</button>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center">
+                <button type="button " class="btn btn-morado1 button-margin" onclick="botonEnviar2(); ">Traformar Para /X/ 4chan!</button>
+            </div>
+        </div>
+        <div class="row row-margin">
+            <div class="col-lg-12 text-center">
+                <button type="button" class="btn btn-play " onclick="nekoVoz(); "> <img src="play.png " alt=" " srcset=" "></button>
+                <button type="button" class="btn btn-pausa " onclick="nekoVozPausa(); ">Pausar</button>
+                <button type="button" class="btn btn-seguir " onclick="nekoVozSeguir(); ">Seguir</button>
+                <button type="button" class="btn btn-rojoo " onclick="nekoVozCacelar(); ">Detener</button>
+            </div>
+        </div>
+        <div class="row row-margin">
+            <div class="col-lg-12">
+                <form action="http://localhost:3000/hispachan.org/:board/res/:th.html" method="POST"></form>
+                <label id="emailHelp" class="form-text text-muted text-uppercase text-center">El programa anon no se hace reposable del fin en que uses esta pagina.</label>
+                <input type="text" name="name" class="form-control " id="potsABuscar " aria-describedby="textlink " placeholder="Anon coloca el link del hispa aqui! Ejemplo: https://www.hispachan.org/ve/res/Numero-de-Hilo-Aqui.html ">
+               <button type="submit" class="btn btn-morado1 button-margin" onclick="nekoMinig(); ">Traformar</button>
+             
+            </form>
+            </div>
+            <div class="col-lg-12">
+            <form action="http://localhost:3000/hispachan.org/:board/res/:th.html" method="POST">
+                <input   type="text" name="name" class="form-control"  placeholder="Anon coloca el link del hispa aqui!">
+                <button type="submit" class="btn btn-primary">Generar Texto</button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <!--Barra de busqueda-->
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="logica.js "></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=02uzInTR "></script>
+    <script src="servidor.js "></script>
+    <script src="logicaVago.js "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+</body>
+
+</html>
